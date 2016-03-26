@@ -52,6 +52,9 @@ a:hover {
 .conditionTitle{
     font-weight: bold;   
 } 
+.alert {
+    color:red;
+}
 div.resultcat{
     margin: auto;
     text-align:center;
