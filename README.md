@@ -1,2 +1,2 @@
 # weathercat
-WeatherCat web app
+WeatherCat web app, using OpenWeatherMap's api.
