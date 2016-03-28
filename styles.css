@@ -1,7 +1,7 @@
 html {
     height:100%;
 }
-html, body, .container {
+html, body, {
     min-height: 100% !important;
     height: 100%;
 }
@@ -11,17 +11,18 @@ body{
 }
 .container {
     margin: auto;
-    max-width:900px;
+    max-width:600px;
     min-height:100%;
     background-color: rgba( 255, 255, 255, 0.5 );
 }
 .content {
-    max-width: 700px;
+    max-width: 500px;
     margin: auto;
     font-family: 'Cantarell', sans-serif;
 }
 .results{
-    max-width: 700px;
+    max-width: 500px;
+    min-height:500px;
     margin: auto;
     font-family: 'Cantarell', sans-serif;
 }
@@ -39,8 +40,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.results{
-    height:500px;
+.field {
+    font-size:12pt;
 }
 .content li{
     text-transform: lowercase;
@@ -64,6 +65,7 @@ img.resultcat{
     -webkit-border-radius: 4px;
     border-radius: 4px;
     box-shadow: 10px 10px 5px #888888;
+    max-width:500px;
 }
 /* input & button ideas frm css-tricks.com https://css-tricks.com/snippets/css/picross-style-buttons/ */
 input {
@@ -72,6 +74,9 @@ input {
     background: rgba(255,255,255,0.5);
     margin: 0 0 10px 0;
 
+}
+#country {
+    width:120px;
 }
 button {
     background-color: #551A8B;
@@ -86,9 +91,6 @@ button {
 }
 select {
     background-color: #551A8B;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius:2px;
     color: #fff;
     margin: 0 0 10px 0;
     text-decoration: none;
