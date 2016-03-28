@@ -23,7 +23,7 @@ $( document ).ready(function() {
     if (zip && country)
     {
         // make AJAX call, storing the JSON output in data
-        $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + zip + ',' + country + ',za&units=' + units + '&APPID=0117bf81e4cbdc2ac2892799d1392ee4&mode=json', function (data) {
+        $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + zip + ',' + country + ',za&units=' + units + '&APPID={YOURAPIKEY}&mode=json', function (data) {
             
             // Checks for imperial vs. metric and prints
             $(".results").append('<h3>' + data.name + ', ' + data.sys.country + '</h3>');
