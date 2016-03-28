@@ -20,7 +20,7 @@ $( document ).ready(function() {
         var units = $('#units').val();
         var catgif;
 
-    if (zip && country)
+    if (zip)
     {
         // make AJAX call, storing the JSON output in data
         $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + zip + ',' + country + ',za&units=' + units + '&APPID={YOURAPIKEY}&mode=json', function (data) {
@@ -75,14 +75,8 @@ $( document ).ready(function() {
             $(".results").append('<div class="resultcat"><img src="http://www.kylebutz.com/weathercat/' + catgif +'" class="resultcat"/></div>');
         });
     }
-    else if (zip && !country){
-        $(".results").append('<h3 class="alert"> You must fill in Country code(ISO 3166, like US, RU, GB...)</h3>');
-    }
-    else if (!zip && country){
-        $(".results").append('<h3 class="alert"> You must fill in City/Zip</h3>');
-    }
     else {
-        $(".results").append('<h3 class="alert"> You must fill in both City/Zip and Country code(ISO 3166, like US, RU, GB...)</h3>');
+        $(".results").append('<h3 class="alert"> You must fill in both City/Zip</h3>');
     }
     });
 }(jQuery));
